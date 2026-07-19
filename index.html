@@ -2923,8 +2923,9 @@ function initMSAL(){
   try {
     var msalConfig = {
       auth:{
-        clientId  : SYNC_CFG.clientId,
-        authority : 'https://login.microsoftonline.com/' + SYNC_CFG.tenantId,
+        clientId  : "e7320f04-6a11-439c-92b5-2694da376e45",
+        tenantId  : "common",
+        authority : 'https://login.microsoftonline.com/common',
         redirectUri: window.location.href.split('?')[0].split('#')[0]
       },
       cache:{
