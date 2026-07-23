@@ -3366,7 +3366,7 @@ function refreshSyncAdminStats(){
    ══════════════════════════════════════════════════════ */
 function injectHeaderIndicator(){
   if(document.getElementById('sync-header-bar')) return;
-  var header = document.querySelector('header');
+  var header = document.getElementById('top-header');
   if(!header) return;
   var bar = document.createElement('div');
   bar.id = 'sync-header-bar';
